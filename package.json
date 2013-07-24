@@ -3,7 +3,6 @@
     "author": "Felix Huang <felix@webinit.org>",
     "version": "0.1.0",
     "dependencies": {
-	   "twitter-1.1": "0.1.18",
         "express": "3.3.4",
         "ejs": "0.8.4",
         "memcached": "0.2.3",
