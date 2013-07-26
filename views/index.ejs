@@ -82,6 +82,7 @@ a img { border: none; }
             body { font-size: 24px; }
         }
         footer { clear: both; font-size: 0.7em; text-align: center; }
+        footer nav { font-size: 12px; }
     </style>
 </head>
 <body>
@@ -90,7 +91,8 @@ a img { border: none; }
     <h2><i>Mac</i><em class="<%= statuses.mac ? 'active' : ''%>"><%- statuses.mac ? 'Online' : 'Offline' %></em></h2>
     <h2><i>Safari</i><em class="<%= statuses.safari ? 'active' : ''%>"><%- statuses.safari ? 'Online' : 'Offline' %></em></h2>
     <footer>
-        <p>Last Updated: <%=: updated | prettyDate %> UTC</p>
+    <p>Last Updated: <%=: updated | prettyDate %> UTC</p>
+    <nav>Created by <a href="http://sensepixel.com/">Sense Pixel</a>.</nav>
     </footer>
 </body>
 </html>

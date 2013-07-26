@@ -41,7 +41,7 @@
             
             _.each(websites, function (url, key) {
                 var p = http.request({url: url, method: 'HEAD'}).then(function (res) {
-                    var status = res.statusCode >= 200 && res.statusCode < 300;
+                    var status = res.status >= 200 && res.status < 300;
                     result[key] = status;
                 });
                 ps.push(p);
